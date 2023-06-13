@@ -24,11 +24,17 @@ function Form() {
     }
   };
   // Викликається під час відправлення форми
-  const handleSubmit = (name, number) => {
-    if (contacts.find(contact => contact.name === name)) {
-      alert(`${name} is already in contacts`);
-      return;
-    }
+  const handleSubmit = e => {
+    e.preventDefault();
+    if (
+      contacts.find(
+        contact => contact.name.toLowerCase() === name.toLowerCase()
+      )
+    )
+      if (contacts.find(contact => contact.name === name)) {
+        alert(`${name} is already in contacts`);
+        return;
+      }
     if (contacts.find(contact => contact.number === number)) {
       alert(`Number ${number} already exists`);
       return;
