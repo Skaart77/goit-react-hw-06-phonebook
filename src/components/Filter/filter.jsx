@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Action, Selector } from '../../redux';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -16,7 +15,5 @@ function Filter() {
     />
   </label>;
 }
-Filter.propTypes = {
-  value: PropTypes.string,
-};
+
 export default Filter;

@@ -76,6 +76,7 @@ li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .contact {
+  width: 400px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -84,6 +85,8 @@ li {
 }
 
 .contact-item {
+  border: 1px solid rgb(1, 109, 109);
+  border-radius: 4px;
   display: flex;
   align-items: center;
   font-size: 20px;
